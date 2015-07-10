@@ -1,0 +1,27 @@
+{
+  "name": "timebot",
+  "version": "0.0.1",
+  "description": "Tiny JS utility for managing multiple timeouts and intervals",
+  "main": "timebot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justenPalmer/timebot.git"
+  },
+  "keywords": [
+    "timeouts",
+    "intervals",
+    "organization",
+    "management",
+    "games",
+    "applications"
+  ],
+  "author": "J Palms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justenPalmer/timebot/issues"
+  },
+  "homepage": "https://github.com/justenPalmer/timebot"
+}

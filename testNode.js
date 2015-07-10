@@ -1,5 +1,5 @@
 
-var timebot = require('./timebot.js');
+var timebot = require('timebot');
 
 var getTime = function(){
 	var D = new Date();

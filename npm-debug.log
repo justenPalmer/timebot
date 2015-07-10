@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/admin/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/admin/.npm/timebot/0.0.1/package.tgz', '.' ]
+11 verbose tarball /Users/admin/.npm/timebot/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish timebot@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/admin/.npm/1f1177db-tar.lock
+16 silly lockFile bf658e5e-in-npm-timebot-0-0-1-package-tgz tar:///Users/admin/.npm/timebot/0.0.1/package.tgz
+17 verbose lock tar:///Users/admin/.npm/timebot/0.0.1/package.tgz /Users/admin/.npm/bf658e5e-in-npm-timebot-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile bf658e5e-in-npm-timebot-0-0-1-package-tgz tar:///Users/admin/.npm/timebot/0.0.1/package.tgz
+21 silly lockFile bf658e5e-in-npm-timebot-0-0-1-package-tgz tar:///Users/admin/.npm/timebot/0.0.1/package.tgz
+22 silly lockFile bcad615e--admin-npm-timebot-0-0-1-package /Users/admin/.npm/timebot/0.0.1/package
+23 verbose lock /Users/admin/.npm/timebot/0.0.1/package /Users/admin/.npm/bcad615e--admin-npm-timebot-0-0-1-package.lock
+24 silly lockFile bcad615e--admin-npm-timebot-0-0-1-package /Users/admin/.npm/timebot/0.0.1/package
+25 silly lockFile bcad615e--admin-npm-timebot-0-0-1-package /Users/admin/.npm/timebot/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'timebot',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'Tiny JS utility for managing multiple timeouts and intervals',
+28 silly publish   main: 'timebot.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/justenPalmer/timebot.git' },
+28 silly publish   keywords:
+28 silly publish    [ 'timeouts',
+28 silly publish      'intervals',
+28 silly publish      'organization',
+28 silly publish      'management',
+28 silly publish      'games',
+28 silly publish      'applications' ],
+28 silly publish   author: { name: 'J Palms' },
+28 silly publish   license: 'ISC',
+28 silly publish   bugs: { url: 'https://github.com/justenPalmer/timebot/issues' },
+28 silly publish   homepage: 'https://github.com/justenPalmer/timebot',
+28 silly publish   readme: '# timebot\nTiny JS utility for queueing and clearing timeouts and intervals\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'e91242e3a7190fef3222ea66478dc54cd9a6a61a',
+28 silly publish   _id: 'timebot@0.0.1',
+28 silly publish   _shasum: '6d00749bfba6d761c0f3fa6c2a441583cae7199f',
+28 silly publish   _from: '.' }
+29 verbose url raw timebot
+30 verbose url resolving [ 'https://registry.npmjs.org/', './timebot' ]
+31 verbose url resolved https://registry.npmjs.org/timebot
+32 info trying registry request attempt 1 at 15:24:07
+33 http PUT https://registry.npmjs.org/timebot
+34 http 403 https://registry.npmjs.org/timebot
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=60',
+35 verbose headers   'content-length': '95',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Fri, 10 Jul 2015 22:24:08 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-ord1722-ORD',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1436567047.917656,VS0,VE1030' }
+36 error publish Failed PUT 403
+37 error Error: "You cannot publish over the previously published version 0.0.1." : timebot
+37 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:274:14)
+37 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:65)
+37 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+37 error     at Request.emit (events.js:98:17)
+37 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+37 error     at Request.emit (events.js:117:20)
+37 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+37 error     at IncomingMessage.emit (events.js:117:20)
+37 error     at _stream_readable.js:929:16
+37 error     at process._tickCallback (node.js:419:13)
+38 error If you need help, you may report this *entire* log,
+38 error including the npm and node versions, at:
+38 error     <http://github.com/npm/npm/issues>
+39 error System Darwin 14.3.0
+40 error command "node" "/usr/local/bin/npm" "publish"
+41 error cwd /Users/admin/Dev/timebot
+42 error node -v v0.10.29
+43 error npm -v 1.4.14
+44 verbose exit [ 1, true ]
