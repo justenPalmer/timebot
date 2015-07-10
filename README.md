@@ -5,7 +5,7 @@ Tiny JS utility for managing multiple timeouts and intervals. Timebot provides a
 2. Use a tag on timeouts to isolate and perform actions on only groups of timeouts
 3. Use it in the browser and with node.js
 
-```` javascript
+``` javascript
 
 //to set an ever looping timeout (interval)
 timebot.set({period:400,loop:true},function(i){
@@ -34,4 +34,14 @@ timebot.pause('tag1');
 //clear all timeouts
 timebot.clear();
 
-````
+```
+
+###use with node
+Installation
+```
+npm install timebot
+```
+In the code
+``` javascript
+var timebot = require('timebot');
+```
