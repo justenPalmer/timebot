@@ -36,7 +36,7 @@ timebot.clear();
 
 ```
 
-###use with node
+##use with node
 Installation
 ```
 npm install timebot
