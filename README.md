@@ -7,7 +7,7 @@ Tiny JS utility for managing multiple timeouts and intervals. Timebot provides a
 
 ```` javascript
 
-//to set a looping timeout (interval)
+//to set an ever looping timeout (interval)
 timebot.set({period:400,loop:true},function(i){
   console.log('looped ' + i + ' times');
 });
@@ -16,5 +16,22 @@ timebot.set({period:400,loop:true},function(i){
 timebot.set({period:1200,loop:3},function(i){
   console.log('looped ' + i + ' times');
 });
+
+//create a timeout with a tag (for organization)
+timebot.set({tag:'tag1',period:1000,loop:true},function(i){
+  console.log('looped tag1 ' + i + ' times');
+});
+
+//pause all timeouts
+timebot.pause();
+
+//resume timeouts
+timebot.resume();
+
+//only pause timeouts that are tagged 'tag1' - pause, resume, and clear can all take a tag
+timebot.pause('tag1');
+
+//clear all timeouts
+timebot.clear();
 
 ````
